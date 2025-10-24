@@ -1,6 +1,7 @@
 from re import *
 
-text = input()
+
+text = input('Введите текст: ')
 
 lower = 'abcdefghijklmnopqrstuvwxyz'
 upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -39,6 +40,6 @@ for i in text:
     else:
         new_text += i
     
-print(list_of_words)
-print(k)
+print(f'Шифр: {new_text}')
+print(f'k = {k}')
     

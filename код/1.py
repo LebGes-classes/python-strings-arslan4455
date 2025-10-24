@@ -4,12 +4,12 @@ list_of_words = []
 
 word = ''
 
-for i in text + ' ':
-    if i != ' ':
-        word += i
-    else:
+for sym in text + ' ':
+    if sym == ' ':
         list_of_words.append(word)
         word = ''
+    else:
+        word += sym
 
 reversed_words = ''
 
